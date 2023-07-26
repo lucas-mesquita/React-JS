@@ -4,8 +4,8 @@ import Card from "react-bootstrap/Card"
 
 const ItemDetail = ({ id, nombre, detalle, categoria, precio, stock, img }) => {
     return (
-        <Card style={{ width: '100%', minHeight: '30rem' }}>
-            <Card.Img variant="top" src={img} style={{ objectFit: 'cover' }} />
+        <Card className="align-items-center" style={{ width: '100%', minHeight: '30rem' }}>
+            <Card.Img variant="top" src={img} style={{width:`50%`}} />
             <Card.Body>
                 <Card.Title>{nombre}</Card.Title>
                 <Card.Title>{detalle}</Card.Title>

@@ -12,7 +12,7 @@ export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products)
-        }, 500);
+        }, 200);
     })
 }
 
@@ -20,7 +20,7 @@ export const getProductsById =(productId)=>{
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products.find(prod=>prod.id === productId))
-        }, 500);
+        }, 200);
     })
 }
 
@@ -32,10 +32,10 @@ export const getCategories = ()=>{
     })
 }
 
-export const getProductsByCategoryId=(categoryId)=>{
+export const getProductsByCategoryName=(categoryName)=>{
     return new Promise ((resolve)=>{
         setTimeout(() => {
-            resolve(products.filter(category=>category.categoria === categoryId))
-        }, 500);
+            resolve(products.filter(category=>category.categoria === categoryName))
+        }, 200);
     })
 }
