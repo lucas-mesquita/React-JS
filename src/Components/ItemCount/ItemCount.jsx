@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
 
 
@@ -18,15 +19,15 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     }
     return (
         <Container>
-            <div className="controls">
-                <button className="button" onClick={decrement}>-</button>
+            <div className="flex">
+                <Button className="button" onClick={decrement}>-</Button>
                 <p className="number">{quantity} </p>
-                <button className="button" onClick={increment}>+</button>
+                <Button className="button" onClick={increment}>+</Button>
             </div>
             <div>
-                <button className="button" onClick={() => onAdd(quantity)} disabled={!stock}>
+                <Button className="button" onClick={() => onAdd(quantity)} disabled={!stock}>
                     Agregar al carrito
-                </button>
+                </Button>
             </div>
             </Container>
     )

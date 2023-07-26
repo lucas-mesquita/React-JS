@@ -3,24 +3,24 @@ import ItemCount from "../ItemCount/ItemCount"
 import { useEffect } from "react"
 import { getProductsById } from "../../AsyncMock"
 import ItemDetail from "../ItemDetail/ItemDetail"
+import Container from "react-bootstrap/Container"
+import { useParams } from "react-router-dom"
 
 const ItemDetailContainer = () => {
 
     const [product, setProduct] = useState(null)
+    const { itemId } = useParams()
 
     useEffect(() => {
-        getProductsById(2)
+        getProductsById(itemId)
             .then(response => setProduct(response))
             .catch(error => console.error(error))
-    }, [])
-
-    console.log('item detail',product);
+    }, [itemId])
 
     return (
-
-        <div className="containerDetail">
+        <Container className="ItemDetailContainer">
             <ItemDetail {...product} />
-        </div>
+        </Container>
     )
 
 }
