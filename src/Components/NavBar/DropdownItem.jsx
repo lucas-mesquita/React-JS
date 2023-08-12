@@ -14,7 +14,7 @@ export const DropdownItem = () => {
     }, [])
 
     return (<>
-        {categories.map(cat => <NavDropdown.Item  key={cat} href={`/category/${cat}`}>{cat}</NavDropdown.Item>)
+        {categories.map(cat => <NavDropdown.Item  key={cat} href={`#/category/${cat}`}>{cat}</NavDropdown.Item>)
         }
     </>
     )

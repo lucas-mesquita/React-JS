@@ -10,7 +10,7 @@ const Item = ({ id, nombre, precio, stock, img }) => {
                     <Card.Title>{nombre}</Card.Title>
                     <Card.Text>Precio: ${precio}</Card.Text>
                     <Card.Text>Stock: {stock}</Card.Text>
-                    <Button href={`/item/${id}`} variant="secondary">Ver Detalles</Button>
+                    <Button href={`#/item/${id}`} variant="secondary">Ver Detalles</Button>
                 </Card.Body>
             </Card>
     )

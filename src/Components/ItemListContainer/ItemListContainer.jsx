@@ -7,6 +7,7 @@ const ItemListContainer = ({ greeting }) => {
 
     const [products, setProducts] = useState([])
     const { categoryName } = useParams()
+    
     useEffect(() => {
         const asyncFunc = categoryName ? getProductsByCategoryName : getProducts
         asyncFunc(categoryName)

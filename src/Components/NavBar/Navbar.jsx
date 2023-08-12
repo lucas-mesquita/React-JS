@@ -10,12 +10,12 @@ const NavBar = () => {
     return (
         <Navbar expand="lg" className="bg-body-secondary">
             <Container>
-                <Navbar.Brand href="/">MyApp</Navbar.Brand>
+                <Navbar.Brand href="#/">MyApp</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/">Inicio</Nav.Link>
-                        <Nav.Link href="/">Promociones</Nav.Link>
+                        <Nav.Link href="#/">Inicio</Nav.Link>
+                        <Nav.Link href="#/">Promociones</Nav.Link>
                         <NavDropdown title="Categorías" id="basic-nav-dropdown">
                             <DropdownItem />
                         </NavDropdown>
