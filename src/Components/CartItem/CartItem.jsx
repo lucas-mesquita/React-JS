@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { CartContext } from "../Context/CartContext"
+import { Button } from "react-bootstrap"
 
 
 export const CartItem = ({ nombre, quantity, precio }) => {

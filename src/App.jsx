@@ -6,6 +6,7 @@ import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailCont
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import {CartProvider } from './Components/Context/CartContext';
 import { Cart } from './Components/Cart/Cart';
+import { Checkout } from './Components/Checkout/Checkout';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='/category/:categoryName' element={<ItemListContainer />} />
             <Route path='/item/:itemId' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />}></Route>
+            <Route path='/checkout' element={<Checkout />}></Route>
             <Route path='*' element={<h1>Error 404</h1>} />
           </Routes>
         </HashRouter>
